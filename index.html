@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plywood Sandakelum | Wholesale Plywood Board & Sheet Suppliers in Ganemulla, Sri Lanka</title>
+    <meta name="description" content="Plywood Sandakelum in Ganemulla, Sri Lanka supplies premium shutter boards, hardboard, MDF melamine, PVC boards, and engineered plywood sheets for furniture, flooring, and construction.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Google tag (gtag.js) - GA4 Practice Instrumentation -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX', { 'debug_mode': true });
+    </script>
+
+    <style>
+        /* Section 1 - Hero */
+        #zsec1 {
+            background: url(img/plywood-colorful-decorations.jpg) no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        .zd1 {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 21, 20, 0.90) 0%, rgba(26, 21, 20, 0.72) 100%);
+            padding: 5rem 0 6rem;
+        }
+        .zd2 {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            margin-top: 0.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+        }
+        .smallhead {
+            font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+            color: var(--color-amber);
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .headpara {
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            font-family: var(--font-body);
+            color: #ede6de;
+            line-height: 1.7;
+            padding: 2rem 0 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+        }
+        .hero-btn-quote {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid var(--color-amber);
+        }
+        .hero-btn-quote:hover {
+            background: var(--color-amber);
+            color: #1f1a18;
+        }
+
+        /* Section 3 - Core Applications */
+        #sec3 {
+            background: var(--color-surface-soft);
+            padding: 4rem 0 4.5rem;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .sec3-title-wrap {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        #maincard {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 520px) {
+            #maincard {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            #maincard {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .fourcards {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            padding: 2.25rem 1.5rem;
+            text-align: center;
+            position: relative;
+            box-shadow: var(--shadow-card);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+        }
+        .fourcards::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--color-wood-tan);
+            transition: height var(--transition-fast), background var(--transition-fast);
+        }
+        .fourcards:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-amber);
+        }
+        .fourcards:hover::before {
+            height: 6px;
+            background: var(--color-amber);
+        }
+        .img2 {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.25rem;
+            display: block;
+        }
+        .cardhead {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            letter-spacing: 0.04em;
+            margin-bottom: 0.75rem;
+        }
+        .cardpara {
+            font-size: 1rem;
+            font-family: var(--font-body);
+            color: var(--color-text-muted);
+            line-height: 1.5;
+        }
+
+        /* Section 5 - Why Choose Plywood */
+        #sec5 {
+            padding: 5rem 0;
+            background: var(--color-bg);
+        }
+        #sec4bigimg {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+        @media (min-width: 992px) {
+            #sec4bigimg {
+                grid-template-columns: 1fr 1fr;
+                gap: 3.5rem;
+            }
+        }
+        #sec4left {
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-card);
+        }
+        .leftimg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        #sec4right {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-left: 6px solid var(--color-amber);
+            border-radius: 4px;
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-card);
+        }
+        @media (min-width: 768px) {
+            #sec4right {
+                padding: 3rem 2.5rem;
+            }
+        }
+        .sec4righthead {
+            font-size: clamp(2rem, 3.2vw, 2.6rem);
+            font-family: var(--font-display);
+            color: var(--color-timber-dark);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 1.25rem;
+        }
+        .sec4rightpara {
+            font-size: 1.05rem;
+            font-family: var(--font-body);
+            color: var(--color-text);
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+        .sec4rightpara:last-of-type {
+            margin-bottom: 1.75rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head wrapper">
+            <a href="index.html" class="logo-link" aria-label="Plywood Sandakelum Home">
+                <img src="img/logo.svg" alt="Plywood Sandakelum Logo" class="logo">
+            </a>
+
+            <div class="header-controls">
+                <nav aria-label="Main Navigation">
+                    <ul class="ul">
+                        <li id="L1" class="l1 active"><a href="index.html" class="nav_links" id="i1"><img src="img/icons/home.svg" alt="" class="home-icon" aria-hidden="true"><span>Home</span></a></li>
+                        <li id="L2" class="l1"><a href="aboutus.html" class="nav_links">About Us</a></li>
+                        <li id="L3" class="l1"><a href="all.html" class="nav_links">All Products</a></li>
+                        <li id="L4" class="l1"><a href="contact.html" class="nav_links">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle dark/light theme">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+
+                <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <img src="img/icons/menu.svg" alt="" id="menu" aria-hidden="true">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="zsec1">
+            <div class="zd1">
+                <div class="wrapper zd2">
+                    <span class="smallhead">Trusted Wood Materials in Sri Lanka</span>
+                    <h1 class="header">Plywood Board & Sheets Sellers</h1>
+                    <p class="headpara">Today there is a strong demand for engineered plywood in Sri Lanka and worldwide due to its cost-efficiency, durability, and smooth finish. Plywood Sandakelum in Ganemulla supplies premium commercial plywood boards and sheets in any required quantity for residential, commercial, and industrial projects.</p>
+                    <div class="hero-actions">
+                        <a href="all.html" class="button">Explore Products</a>
+                        <a href="contact.html" class="button hero-btn-quote">Request a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section id="sec3">
+            <div class="wrapper">
+                <div class="sec3-title-wrap">
+                    <h2 class="sec4head">Versatile Applications</h2>
+                    <p class="sec4para" style="margin: 0 auto;">Engineered for strength, water resistance, and flawless aesthetic finishing across modern carpentry.</p>
+                </div>
+
+                <div id="maincard">
+                    <div class="fourcards">
+                        <img src="img/icons/door.svg" alt="Doors and windows" class="img2">
+                        <h3 class="cardhead">Doors</h3>
+                        <p class="cardpara">High-grade plywood engineered for interior doors, window frames, and exterior shutters.</p>
+                    </div>
+
+                    <div class="fourcards">
+                        <img src="img/icons/furniture.svg" alt="Indoor and outdoor furniture" class="img2">
+                        <h3 class="cardhead">Furniture</h3>
+                        <p class="cardpara">Ideal foundation for kitchen pantries, outdoor tables, modern wardrobes, and cabinets.</p>
+                    </div>
+
+                    <div class="fourcards">
+                        <img src="img/icons/floor.svg" alt="Plywood flooring" class="img2">
+                        <h3 class="cardhead">Flooring</h3>
+                        <p class="cardpara">Moisture-resistant underlayment and structural interior flooring that remains stable.</p>
+                    </div>
+
+                    <div class="fourcards">
+                        <img src="img/icons/staircases.svg" alt="Staircases" class="img2">
+                        <h3 class="cardhead">Staircases</h3>
+                        <p class="cardpara">Adds an elegant, structural natural timber finish to stair steps, risers, and decorative railings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="sec4" class="catalog-section">
+            <div class="wrapper">
+                <h2 class="sec4head">Our Plywood Boards & Sheets</h2>
+                <p class="sec4para">We supply standard and custom-calibrated sheets ranging from 1mm up to 25mm thickness. Explore our most popular categories below:</p>
+            
+                <div id="image-set" class="product-grid">
+                    <div class="sec4div" data-product-name="Shutter Board">
+                        <div class="product-card-header">
+                            <h3 class="divhead">Shutter Board</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/shutter-board.jpg" alt="Shutter Board Plywood" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">Concrete Formwork</span>
+                            <span>High Reusability</span>
+                        </div>
+                    </div>
+
+                    <div class="sec4div" data-product-name="Hard Board">
+                        <div class="product-card-header">
+                            <h3 class="divhead">Hard Board</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/hard-board.jpg" alt="High Density Hard Board" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">High Density</span>
+                            <span>Smooth Surface</span>
+                        </div>
+                    </div>
+
+                    <div class="sec4div" data-product-name="MDF Melamine">
+                        <div class="product-card-header">
+                            <h3 class="divhead">M.D.F Melamine</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/mdf-melamine.jpg" alt="MDF Melamine Decorative Board" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">Pre-Finished</span>
+                            <span>Modern Cabinetry</span>
+                        </div>
+                    </div>
+
+                    <div class="sec4div" data-product-name="PVC Board">
+                        <div class="product-card-header">
+                            <h3 class="divhead">PVC Board</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/pvc-board.jpg" alt="100% Waterproof PVC Board" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">100% Waterproof</span>
+                            <span>Termite Proof</span>
+                        </div>
+                    </div>
+
+                    <div class="sec4div" data-product-name="Eco Sheet">
+                        <div class="product-card-header">
+                            <h3 class="divhead">Eco Sheets</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/eco-sheet.jpg" alt="Eco Friendly Recycled Sheet" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">Eco-Friendly</span>
+                            <span>Cost Effective</span>
+                        </div>
+                    </div>
+
+                    <div class="sec4div" data-product-name="Cladding Sheet">
+                        <div class="product-card-header">
+                            <h3 class="divhead">Cladding Sheet</h3>
+                        </div>
+                        <div class="product-img-wrapper">
+                            <img src="img/products/cladding-sheet.jpg" alt="Exterior Wall Cladding Sheet" class="divimg" loading="lazy">
+                        </div>
+                        <div class="product-card-footer">
+                            <span class="product-tag">Architectural</span>
+                            <span>Weather Resistant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sec4final-div">
+                    <a href="all.html" class="button" id="sec4button">View All 13 Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Plywood Section -->
+        <section id="sec5">
+            <div class="wrapper">
+                <div id="sec4bigimg">
+                    <div id="sec4left">
+                        <img src="img/plywood-home.jpg" alt="Modern interior using Plywood Sandakelum materials" class="leftimg" loading="lazy">
+                    </div>
+
+                    <div id="sec4right">
+                        <h2 class="sec4righthead">Why Choose Plywood?</h2>
+                        <p class="sec4rightpara">Plywood is engineered by bonding cross-laminated layers of wood veneers under intense heat and pressure. This alternating grain direction produces superior structural stability and tensile strength compared to ordinary timber planks, preventing warping, splitting, and shrinking.</p>
+                        <p class="sec4rightpara">Compared to expensive ceramics, heavy masonry, or costly metals, plywood offers remarkable savings while delivering a warm, authentic timber aesthetic. Plywood boards resist temperature and humidity fluctuations, making them the preferred sustainable choice for Sri Lankan climates.</p>
+                        <a href="contact.html" class="button button-secondary">Speak with our specialists</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="wrapper fmain">
+            <div id="fleft">
+                <img src="img/logo2.svg" alt="Plywood Sandakelum Logo" id="flogo">
+                <p class="fpara">Wholesale & retail supplier of quality plywood boards and engineered wood sheets in Sri Lanka. Trusted for over twenty years.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/PlywoodSandakelum" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Sandakelum Plywood on Facebook">
+                        <img src="img/icons/facebook.svg" alt="" aria-hidden="true">
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="fcenter">
+                <h4 class="footer-heading">Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html" class="flinks">Home</a></li>
+                    <li><a href="aboutus.html" class="flinks">About Us</a></li>
+                    <li><a href="all.html" class="flinks">All Products</a></li>
+                    <li><a href="contact.html" class="flinks">Contact & Quote</a></li>
+                </ul>
+            </div>
+
+            <div id="fright">
+                <h4 class="footer-heading">Contact Details</h4>
+                <div id="footer_contacts">
+                    <a href="tel:+94703662466" class="contacts" aria-label="Call 070 366 2466">
+                        <img src="img/icons/call.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>Call Us:</strong><br>
+                            070 366 2466
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/94741502503" target="_blank" rel="noopener noreferrer" class="contacts" aria-label="Chat on WhatsApp 074 150 2503">
+                        <img src="img/icons/whatsapp.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>WhatsApp:</strong><br>
+                            074 150 2503
+                        </div>
+                    </a>
+
+                    <div class="contacts">
+                        <img src="img/icons/location.svg" alt="" class="contactimg" aria-hidden="true">
+                        <address class="contactpara" style="font-style: normal;">
+                            <strong>Warehouse & Sales:</strong><br>
+                            No. 241/A, Kadawatha-Ganemulla Road,<br>
+                            Ganemulla, Sri Lanka
+                        </address>
+                    </div>
+                </div>
+
+                <div id="ptop" role="button" tabindex="0" aria-label="Back to top">
+                    <div class="triangle" aria-hidden="true"></div>
+                    <span id="toppara">Page Top</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper footer-bottom">
+            <p>All Rights Reserved &copy; 2026 Plywood Sandakelum. Ganemulla, Sri Lanka.</p>
+            <p>Designed for Performance & GA4 Learning</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript & GA4 Tracking -->
+    <script src="main.js" defer></script>
+</body>
+</html>

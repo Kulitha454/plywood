@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Request a Quote | Plywood Sandakelum Ganemulla</title>
+    <meta name="description" content="Contact Plywood Sandakelum in Ganemulla, Sri Lanka. Call 070 366 2466 or WhatsApp 074 150 2503 for instant quotes on plywood boards, sheets, and bulk timber delivery.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common2.css">
+
+    <!-- Google tag (gtag.js) - GA4 Practice Instrumentation -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX', { 'debug_mode': true });
+    </script>
+
+    <style>
+        #sec1main {
+            background-image: url(img/phone-on-plywood.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Map Card Section */
+        #sec2 {
+            background: var(--color-surface-soft);
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .map-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 992px) {
+            .map-card {
+                grid-template-columns: 1.4fr 1fr;
+            }
+        }
+        .map-img-box {
+            position: relative;
+            min-height: 280px;
+            background: var(--color-surface-soft);
+        }
+        #g-map {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .map-info-box {
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 1px solid var(--color-border);
+        }
+        .map-info-title {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+        .map-info-address {
+            font-style: normal;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--color-text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .map-btn {
+            align-self: flex-start;
+        }
+
+        /* Direct Contact Cards Grid */
+        #sec3 {
+            padding: 4.5rem 0 3rem;
+            background: var(--color-bg);
+        }
+        #sec3head {
+            font-size: clamp(2rem, 3.8vw, 2.75rem);
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.5rem;
+        }
+        #sec3para {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+        }
+        #maincard {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+        }
+        @media (min-width: 768px) {
+            #maincard {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .threecards {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            box-shadow: var(--shadow-card);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+        }
+        .threecards:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-amber);
+        }
+        .cardtop {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--color-surface);
+            border-bottom: 2px solid var(--color-amber);
+        }
+        .topbg {
+            width: 14px;
+            height: 14px;
+            background-color: var(--color-timber-dark);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+        .tophead {
+            font-size: 1.35rem;
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .cardcont {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            justify-content: center;
+        }
+        .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--color-text);
+            transition: color var(--transition-fast);
+        }
+        a.contact-row:hover {
+            color: var(--color-amber-hover);
+        }
+        .phone {
+            width: 26px;
+            height: 26px;
+            flex-shrink: 0;
+        }
+        .cnumber {
+            font-size: 1.05rem;
+            font-weight: 600;
+            font-family: var(--font-body);
+            line-height: 1.4;
+        }
+
+        /* Working Quote Request Form Section (GA4 Primary Conversion) */
+        #quote-section {
+            padding: 4rem 0 6rem;
+            background: var(--color-surface-soft);
+            border-top: 1px solid var(--color-border);
+        }
+        .form-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+        @media (min-width: 992px) {
+            .form-layout {
+                grid-template-columns: 1fr 1.3fr;
+            }
+        }
+        .form-intro-heading {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 3.5vw, 2.5rem);
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        .form-intro-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        .form-benefits-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .form-benefits-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        .form-benefit-icon {
+            color: var(--color-amber);
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        /* Form Card */
+        .quote-form-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-top: 5px solid var(--color-amber);
+            border-radius: 6px;
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-card);
+        }
+        @media (min-width: 576px) {
+            .quote-form-card {
+                padding: 3rem 2.5rem;
+            }
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+        @media (min-width: 576px) {
+            .form-grid-2col {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        .form-label {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-timber-dark);
+            letter-spacing: 0.02em;
+        }
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-text);
+            background: var(--color-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-amber);
+            box-shadow: 0 0 0 3px rgba(217, 155, 38, 0.2);
+            background: var(--color-surface);
+        }
+        .form-textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+        .form-btn-submit {
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: 0.9rem 2rem;
+            border: none;
+        }
+
+        /* Success Feedback State */
+        #form-success-card {
+            background: var(--color-surface);
+            border: 2px solid var(--color-amber);
+            border-radius: 6px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-hover);
+        }
+        .success-icon {
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .success-title {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .success-summary-text {
+            font-size: 1.15rem;
+            color: var(--color-text);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .success-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head wrapper">
+            <a href="index.html" class="logo-link" aria-label="Plywood Sandakelum Home">
+                <img src="img/logo.svg" alt="Plywood Sandakelum Logo" class="logo">
+            </a>
+
+            <div class="header-controls">
+                <nav aria-label="Main Navigation">
+                    <ul class="ul">
+                        <li id="L1" class="l1"><a href="index.html" class="nav_links"><img src="img/icons/home.svg" alt="" class="home-icon" aria-hidden="true"><span>Home</span></a></li>
+                        <li id="L2" class="l1"><a href="aboutus.html" class="nav_links">About Us</a></li>
+                        <li id="L3" class="l1"><a href="all.html" class="nav_links">All Products</a></li>
+                        <li id="L4" class="l1 active"><a href="contact.html" class="nav_links" id="i1">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle dark/light theme">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+
+                <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <img src="img/icons/menu.svg" alt="" id="menu" aria-hidden="true">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="sec1">
+            <div id="sec1main">
+                <div id="sec1mainbg">
+                    <div class="wrapper">
+                        <div id="sec1MTop">
+                            <h1 class="headsec1">
+                                <span class="h1about">Get in Touch</span>
+                                <span id="headsec11">Contact Plywood Sandakelum</span>
+                            </h1>
+                            <p class="sec1para">We are open 9:00 AM - 6:00 PM everyday, and our phone lines are available for quotes, orders, and technical advice.</p>
+                            <p class="sec1para">Whether you require wholesale bundle delivery across the Western Province or retail collection at our Ganemulla warehouse, our specialists are ready to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct Contact Cards -->
+        <section id="sec3">
+            <div class="wrapper">
+                <h2 id="sec3head">Contact Details</h2>
+                <p id="sec3para">Reach out to our warehouse sales team through any of the channels below:</p>
+            
+                <div id="maincard" class="contact-card-grid">
+
+                    <!-- Card 1: Direct Calling -->
+                    <div class="threecards">
+                        <div class="cardtop">
+                            <span class="topbg" aria-hidden="true"></span>
+                            <h3 class="tophead">Call Us</h3>
+                        </div>
+
+                        <div class="cardcont">
+                            <a href="tel:+94703662466" class="contact-row" aria-label="Call 070 366 2466">
+                                <img src="img/icons/call1.svg" alt="" class="phone" aria-hidden="true">
+                                <span class="cnumber">070 366 2466 (Primary)</span>
+                            </a>
+
+                            <a href="tel:+94741502503" class="contact-row" aria-label="Call 074 150 2503">
+                                <img src="img/icons/call1.svg" alt="" class="phone" aria-hidden="true">
+                                <span class="cnumber">074 150 2503 (Hotline)</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Warehouse Address -->
+                    <div class="threecards">
+                        <div class="cardtop">
+                            <span class="topbg" aria-hidden="true"></span>
+                            <h3 class="tophead">Warehouse Location</h3>
+                        </div>
+
+                        <div class="cardcont">
+                            <div class="contact-row">
+                                <img src="img/icons/location1.svg" alt="" class="phone" aria-hidden="true">
+                                <address class="cnumber" style="font-style: normal;">
+                                    No. 241/A, Kadawatha-Ganemulla Road,<br>
+                                    Ganemulla, Sri Lanka
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Social & WhatsApp -->
+                    <div class="threecards">
+                        <div class="cardtop">
+                            <span class="topbg" aria-hidden="true"></span>
+                            <h3 class="tophead">Instant Chat & Social</h3>
+                        </div>
+
+                        <div class="cardcont">
+                            <a href="https://wa.me/94741502503" target="_blank" rel="noopener noreferrer" class="contact-row" aria-label="Chat on WhatsApp 074 150 2503">
+                                <img src="img/icons/whatsapp1.svg" alt="" class="phone" aria-hidden="true">
+                                <span class="cnumber">074 150 2503 (WhatsApp)</span>
+                            </a>
+
+                            <a href="https://www.facebook.com/PlywoodSandakelum" target="_blank" rel="noopener noreferrer" class="contact-row" aria-label="Facebook Page">
+                                <img src="img/icons/facebook1.svg" alt="" class="phone" aria-hidden="true">
+                                <span class="cnumber">Sandakelum Plywood</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps Location Showcase -->
+        <section id="sec2">
+            <div class="wrapper">
+                <div class="map-card">
+                    <div class="map-img-box">
+                        <img src="img/map.jpg" alt="Map showing location of Plywood Sandakelum on Kadawatha-Ganemulla Road" id="g-map" loading="lazy">
+                    </div>
+                    <div class="map-info-box">
+                        <h3 class="map-info-title">Find Our Warehouse</h3>
+                        <address class="map-info-address">
+                            Plywood Sandakelum<br>
+                            No. 241/A, Kadawatha-Ganemulla Road,<br>
+                            Ganemulla, Western Province, Sri Lanka
+                        </address>
+                        <a href="https://maps.google.com/?q=Plywood+Sandakelum+Ganemulla+Sri+Lanka" target="_blank" rel="noopener noreferrer" class="button map-btn" id="map-link">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Quote Request Form (Primary GA4 Conversion: generate_lead) -->
+        <section id="quote-section">
+            <div class="wrapper">
+                <div class="form-layout">
+                    <div class="form-intro">
+                        <h2 class="form-intro-heading">Request a Fast Material Quote</h2>
+                        <p class="form-intro-desc">Tell us about the boards, sheet thicknesses, and quantities you need. Our warehouse manager will calculate the best wholesale price and respond promptly via phone or WhatsApp.</p>
+                        <ul class="form-benefits-list">
+                            <li><span class="form-benefit-icon">&#10003;</span> Ready inventory of 13+ engineered board types</li>
+                            <li><span class="form-benefit-icon">&#10003;</span> Transparent volume discounts for contractors & workshops</li>
+                            <li><span class="form-benefit-icon">&#10003;</span> Fast delivery arrangements across Sri Lanka</li>
+                            <li><span class="form-benefit-icon">&#10003;</span> Expert advice on water resistance & veneer quality</li>
+                        </ul>
+                    </div>
+
+                    <div id="quote-form-container">
+                        <!-- Client-Side Form -->
+                        <form id="quote-form" class="quote-form-card" novalidate>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Your Name *</label>
+                                    <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Ruwan Perera" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-phone" class="form-label">Phone / WhatsApp Number *</label>
+                                    <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="e.g. 070 366 2466" required pattern="[0-9+ \-]{9,15}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-product" class="form-label">Product of Interest *</label>
+                                    <select id="form-product" name="product" class="form-select" required>
+                                        <option value="" disabled selected>-- Select Plywood / Board Type --</option>
+                                        <option value="Shutter Board">Shutter Board</option>
+                                        <option value="Hard Board">Hard Board</option>
+                                        <option value="PVC Board">PVC Board</option>
+                                        <option value="MDF Melamine">M.D.F Melamine</option>
+                                        <option value="Chipboard Melamine">Chipboard Melamine</option>
+                                        <option value="Plywood Sheet">Plywood Sheet</option>
+                                        <option value="Eco Sheets">Eco Sheets</option>
+                                        <option value="HDX Sheet">HDX Sheet</option>
+                                        <option value="MRX Sheet">MRX Sheet</option>
+                                        <option value="HMR Sheet">HMR Sheet</option>
+                                        <option value="Filmface Plywood">Filmface Plywood</option>
+                                        <option value="MDF Sheet">MDF Sheet</option>
+                                        <option value="Cladding Sheet">Cladding Sheet</option>
+                                        <option value="Other / Multiple Types">Other / Multiple Types</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-specs" class="form-label">Estimated Thickness / Quantity (Optional)</label>
+                                    <input type="text" id="form-specs" name="specs" class="form-input" placeholder="e.g. 20 sheets of 18mm">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-message" class="form-label">Requirements / Project Details *</label>
+                                    <textarea id="form-message" name="message" class="form-textarea" placeholder="Describe your project, delivery location, or special cutting requirements..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="button form-btn-submit" id="btn-submit-quote">
+                                    Submit Quote Request
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Client-Side Success State (Rendered upon submission) -->
+                        <div id="form-success-card" style="display: none;">
+                            <span class="success-icon" aria-hidden="true">&#9989;</span>
+                            <h3 class="success-title">Quote Request Received!</h3>
+                            <p id="success-summary" class="success-summary-text">
+                                Thank you! Your quote request has been registered. Our Ganemulla warehouse team will contact you shortly.
+                            </p>
+                            <div class="success-actions">
+                                <a href="tel:+94703662466" class="button">Call Warehouse Directly</a>
+                                <button type="button" class="button button-secondary" id="btn-reset-form">Send Another Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="wrapper fmain">
+            <div id="fleft">
+                <img src="img/logo2.svg" alt="Plywood Sandakelum Logo" id="flogo">
+                <p class="fpara">Wholesale & retail supplier of quality plywood boards and engineered wood sheets in Sri Lanka. Trusted for over twenty years.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/PlywoodSandakelum" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Sandakelum Plywood on Facebook">
+                        <img src="img/icons/facebook.svg" alt="" aria-hidden="true">
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="fcenter">
+                <h4 class="footer-heading">Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html" class="flinks">Home</a></li>
+                    <li><a href="aboutus.html" class="flinks">About Us</a></li>
+                    <li><a href="all.html" class="flinks">All Products</a></li>
+                    <li><a href="contact.html" class="flinks">Contact & Quote</a></li>
+                </ul>
+            </div>
+
+            <div id="fright">
+                <h4 class="footer-heading">Contact Details</h4>
+                <div id="footer_contacts">
+                    <a href="tel:+94703662466" class="contacts" aria-label="Call 070 366 2466">
+                        <img src="img/icons/call.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>Call Us:</strong><br>
+                            070 366 2466
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/94741502503" target="_blank" rel="noopener noreferrer" class="contacts" aria-label="Chat on WhatsApp 074 150 2503">
+                        <img src="img/icons/whatsapp.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>WhatsApp:</strong><br>
+                            074 150 2503
+                        </div>
+                    </a>
+
+                    <div class="contacts">
+                        <img src="img/icons/location.svg" alt="" class="contactimg" aria-hidden="true">
+                        <address class="contactpara" style="font-style: normal;">
+                            <strong>Warehouse & Sales:</strong><br>
+                            No. 241/A, Kadawatha-Ganemulla Road,<br>
+                            Ganemulla, Sri Lanka
+                        </address>
+                    </div>
+                </div>
+
+                <div id="ptop" role="button" tabindex="0" aria-label="Back to top">
+                    <div class="triangle" aria-hidden="true"></div>
+                    <span id="toppara">Page Top</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper footer-bottom">
+            <p>All Rights Reserved &copy; 2026 Plywood Sandakelum. Ganemulla, Sri Lanka.</p>
+            <p>Designed for Performance & GA4 Learning</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript & GA4 Tracking -->
+    <script src="main.js" defer></script>
+</body>
+</html>

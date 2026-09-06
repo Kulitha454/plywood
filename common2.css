@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Plywood Sandakelum - Common 2 Stylesheet
+   Shared Sub-Page Hero Headers & Interactive Contact Callout Ribbon
+   ========================================================================== */
+
+/* Sub-page Hero Section */
+#sec1main {
+  background-image: url(img/sandakelum-plywood-wareshouse.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#sec1mainbg {
+  background: linear-gradient(135deg, rgba(26, 21, 20, 0.88) 0%, rgba(26, 21, 20, 0.65) 100%);
+  padding: 4rem 0 3.5rem;
+}
+
+@media (min-width: 768px) {
+  #sec1mainbg {
+    padding: 6rem 0 5rem;
+  }
+}
+
+#sec1MTop {
+  max-width: 680px;
+}
+
+.headsec1 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.25rem;
+}
+
+#headsec11 {
+  display: block;
+}
+
+.h1about {
+  color: var(--color-amber);
+  font-size: 0.75em;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.sec1para {
+  color: #e5dfd9;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sec1para:last-child {
+  margin-bottom: 0;
+}
+
+/* Quick Contact Ribbon below Sub-Hero */
+.sec1bottom {
+  background: var(--color-timber-dark);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.sec1bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sec1bottom-container {
+    flex-direction: row;
+  }
+}
+
+.sec1bhead {
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+#sec1bright {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--color-amber);
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#sec1bimg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.sec1bpara {
+  color: #1f1a18;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+.sec1bpara:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.sec1bpara-divider {
+  color: rgba(31, 26, 24, 0.4);
+  font-weight: 300;
+}

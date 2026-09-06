@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Plywood Sandakelum - Over 20 Years in Ganemulla, Sri Lanka</title>
+    <meta name="description" content="Learn about Plywood Sandakelum, our history in Ganemulla, and our commitment to supplying high-grade imported and local plywood boards, shutter sheets, and timber products.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common2.css">
+
+    <!-- Google tag (gtag.js) - GA4 Practice Instrumentation -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXX', { 'debug_mode': true });
+    </script>
+
+    <style>
+        /* Section 2 - Warehouse Gallery */
+        #sec2 {
+            padding: 4.5rem 0 5rem;
+            background: var(--color-bg);
+        }
+        .sec2head {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 3.8vw, 2.75rem);
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.75rem;
+        }
+        .sec2para {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            max-width: 800px;
+            margin-bottom: 2.75rem;
+            line-height: 1.6;
+        }
+        .sec2address-highlight {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+        #img-set {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 540px) {
+            #img-set {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 992px) {
+            #img-set {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .gallery-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-amber);
+        }
+        .grid-img-wrapper {
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: var(--color-surface-soft);
+        }
+        .grid-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        .gallery-card:hover .grid-img {
+            transform: scale(1.05);
+        }
+        .gallery-card-caption {
+            padding: 0.85rem 1.25rem;
+            background: var(--color-surface);
+            border-top: 2px solid var(--color-amber);
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        /* About Values / Stats Banner */
+        .about-values-section {
+            background: var(--color-surface-soft);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            padding: 4rem 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .stat-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 2.25rem 1.5rem;
+            border-radius: 4px;
+            box-shadow: var(--shadow-card);
+        }
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--color-amber);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .stat-title {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-timber-dark);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .stat-desc {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head wrapper">
+            <a href="index.html" class="logo-link" aria-label="Plywood Sandakelum Home">
+                <img src="img/logo.svg" alt="Plywood Sandakelum Logo" class="logo">
+            </a>
+
+            <div class="header-controls">
+                <nav aria-label="Main Navigation">
+                    <ul class="ul">
+                        <li id="L1" class="l1"><a href="index.html" class="nav_links"><img src="img/icons/home.svg" alt="" class="home-icon" aria-hidden="true"><span>Home</span></a></li>
+                        <li id="L2" class="l1 active"><a href="aboutus.html" class="nav_links" id="i1">About Us</a></li>
+                        <li id="L3" class="l1"><a href="all.html" class="nav_links">All Products</a></li>
+                        <li id="L4" class="l1"><a href="contact.html" class="nav_links">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle dark/light theme">
+                    <span class="theme-icon" aria-hidden="true">🌙</span>
+                </button>
+
+                <button type="button" class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <img src="img/icons/menu.svg" alt="" id="menu" aria-hidden="true">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="sec1">
+            <div id="sec1main">
+                <div id="sec1mainbg">
+                    <div class="wrapper">
+                        <div id="sec1MTop">
+                            <h1 class="headsec1">
+                                <span class="h1about">About Our Heritage</span>
+                                <span id="headsec11">Plywood Sandakelum</span>
+                            </h1>
+                            <p class="sec1para">The business Sandakelum started with the supply of quality timber planks and has steadily grown into one of Ganemulla's leading specialized suppliers of engineered plywood boards and composite sheets. Having earned the trust of carpenters, contractors, and furniture makers for over twenty years, we are dedicated to uncompromised quality and dependable service.</p>
+                            <p class="sec1para">We stock an extensive inventory of certified imported and local plywood varieties in Sri Lanka. Contact us for bulk quotations, custom cuts, and expert guidance on sheet specifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Direct Calling Ribbon -->
+            <div class="sec1bottom">
+                <div class="wrapper sec1bottom-container">
+                    <span id="sec1bleft">
+                        <span class="sec1bhead">Call For Inquiries & Orders:</span>
+                    </span>
+
+                    <div id="sec1bright">
+                        <img src="img/icons/call-icon.svg" alt="" id="sec1bimg" aria-hidden="true">
+                        <a href="tel:+94703662466" class="sec1bpara" aria-label="Call 070 366 2466">070 366 2466</a>
+                        <span class="sec1bpara-divider" aria-hidden="true">|</span>
+                        <a href="tel:+94741502503" class="sec1bpara" id="paraborder" aria-label="Call 074 150 2503">074 150 2503</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Warehouse Photo Showcase -->
+        <section id="sec2">
+            <div class="wrapper">
+                <h2 class="sec2head">Our Ganemulla Warehouse</h2>
+                <p class="sec2para">Visit our warehouse facility in Ganemulla to inspect sheet grains, verify thicknesses, and select the precise boards for your work. Our address is: <span class="sec2address-highlight">No. 241/A, Kadawatha-Ganemulla Road, Ganemulla, Sri Lanka</span>.</p>
+            
+                <div id="img-set">
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-1.jpg" class="grid-img" id="gi1" alt="Plywood Sandakelum Warehouse - Stacks of calibrated plywood sheets" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Commercial Sheet Stacks</div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-2.jpg" class="grid-img" id="gi2" alt="Plywood Sandakelum Warehouse - High grade timber boards" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Formwork & Shuttering Boards</div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-3.jpg" class="grid-img" id="gi3" alt="Plywood Sandakelum Warehouse - Organized sheet inventory" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Melamine & MDF Inventory</div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-4.jpg" class="grid-img" id="gi4" alt="Plywood Sandakelum Warehouse - Calibrated thickness inspection" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Calibrated Thickness Range</div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-5.jpg" class="grid-img" id="gi5" alt="Plywood Sandakelum Warehouse - Timber material storage" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Moisture Protected Storage</div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <div class="grid-img-wrapper">
+                            <img src="img/warehouse-6.jpg" class="grid-img" id="gi6" alt="Plywood Sandakelum Warehouse - Customer loading and distribution" loading="lazy">
+                        </div>
+                        <div class="gallery-card-caption">Direct Loading & Dispatch</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Strengths / Numbers -->
+        <section class="about-values-section">
+            <div class="wrapper">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-title">Years of Experience</div>
+                        <p class="stat-desc">Supplying trusted timber and plywood solutions throughout the Western Province since our inception.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">13+</div>
+                        <div class="stat-title">Product Types</div>
+                        <p class="stat-desc">From exterior water-resistant filmface to interior decorative melamine, we stock every standard board.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number">1 - 25mm</div>
+                        <div class="stat-title">Thickness Spectrum</div>
+                        <p class="stat-desc">Precise calibrated thicknesses available in ready stock for fast contractor dispatch and workshop needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="wrapper fmain">
+            <div id="fleft">
+                <img src="img/logo2.svg" alt="Plywood Sandakelum Logo" id="flogo">
+                <p class="fpara">Wholesale & retail supplier of quality plywood boards and engineered wood sheets in Sri Lanka. Trusted for over twenty years.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/PlywoodSandakelum" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit Sandakelum Plywood on Facebook">
+                        <img src="img/icons/facebook.svg" alt="" aria-hidden="true">
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="fcenter">
+                <h4 class="footer-heading">Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html" class="flinks">Home</a></li>
+                    <li><a href="aboutus.html" class="flinks">About Us</a></li>
+                    <li><a href="all.html" class="flinks">All Products</a></li>
+                    <li><a href="contact.html" class="flinks">Contact & Quote</a></li>
+                </ul>
+            </div>
+
+            <div id="fright">
+                <h4 class="footer-heading">Contact Details</h4>
+                <div id="footer_contacts">
+                    <a href="tel:+94703662466" class="contacts" aria-label="Call 070 366 2466">
+                        <img src="img/icons/call.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>Call Us:</strong><br>
+                            070 366 2466
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/94741502503" target="_blank" rel="noopener noreferrer" class="contacts" aria-label="Chat on WhatsApp 074 150 2503">
+                        <img src="img/icons/whatsapp.svg" alt="" class="contactimg" aria-hidden="true">
+                        <div class="contactpara">
+                            <strong>WhatsApp:</strong><br>
+                            074 150 2503
+                        </div>
+                    </a>
+
+                    <div class="contacts">
+                        <img src="img/icons/location.svg" alt="" class="contactimg" aria-hidden="true">
+                        <address class="contactpara" style="font-style: normal;">
+                            <strong>Warehouse & Sales:</strong><br>
+                            No. 241/A, Kadawatha-Ganemulla Road,<br>
+                            Ganemulla, Sri Lanka
+                        </address>
+                    </div>
+                </div>
+
+                <div id="ptop" role="button" tabindex="0" aria-label="Back to top">
+                    <div class="triangle" aria-hidden="true"></div>
+                    <span id="toppara">Page Top</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper footer-bottom">
+            <p>All Rights Reserved &copy; 2026 Plywood Sandakelum. Ganemulla, Sri Lanka.</p>
+            <p>Designed for Performance & GA4 Learning</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript & GA4 Tracking -->
+    <script src="main.js" defer></script>
+</body>
+</html>
